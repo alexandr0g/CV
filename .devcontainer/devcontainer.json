@@ -1,0 +1,14 @@
+{
+  "name": "Entorno Debian Fedora-Host",
+  "image": "mcr.microsoft.com/devcontainers/base:debian",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "features": {
+    // Instalación automática de herramientas comunes de Git y utilidades
+    "ghcr.io/devcontainers/features/common-utils:1": {
+      "configureZshAsDefaultShell": true
+    }
+  },
+  "remoteUser": "vscode"
+}
